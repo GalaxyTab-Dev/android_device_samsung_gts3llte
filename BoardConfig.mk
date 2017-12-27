@@ -16,16 +16,16 @@
 # inherit from common msm8996-common
 -include device/samsung/msm8996-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/gts3lwifi
+DEVICE_PATH := device/samsung/gts3llte
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := gts3lwifi
+TARGET_OTA_ASSERT_DEVICE := gts3llte
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineage_gts3lwifi_defconfig
+TARGET_KERNEL_CONFIG := lineage_gts3llte_defconfig
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
--include vendor/samsung/gts3lwifi/BoardConfigVendor.mk
+-include vendor/samsung/gts3llte/BoardConfigVendor.mk

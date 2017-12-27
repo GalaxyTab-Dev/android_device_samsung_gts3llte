@@ -18,7 +18,7 @@
 set -e
 
 # Required!
-export DEVICE=gts3lwifi
+export DEVICE=gts3llte
 export DEVICE_COMMON=msm8996-common
 export VENDOR=samsung
 

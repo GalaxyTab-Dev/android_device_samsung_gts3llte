@@ -18,12 +18,12 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit from gts3lwifi device
-$(call inherit-product, device/samsung/gts3lwifi/device.mk)
+# Inherit from gts3llte device
+$(call inherit-product, device/samsung/gts3llte/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := gts3lwifi
-PRODUCT_NAME := full_gts3lwifi
+PRODUCT_DEVICE := gts3llte
+PRODUCT_NAME := full_gts3llte
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := gts3lwifi
+PRODUCT_MODEL := gts3llte
 PRODUCT_MANUFACTURER := samsung

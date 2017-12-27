@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_gts3lwifi.mk
+    $(LOCAL_DIR)/full_gts3llte.mk

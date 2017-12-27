@@ -15,7 +15,7 @@
 #
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/samsung/gts3lwifi/gts3lwifi-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/gts3llte/gts3llte-vendor.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
