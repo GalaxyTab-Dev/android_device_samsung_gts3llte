@@ -23,6 +23,7 @@ TARGET_OTA_ASSERT_DEVICE := gts3llte
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_gts3llte_defconfig
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02200000 --tags_offset 0x02000000 --board SRPPK04A000KU
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
