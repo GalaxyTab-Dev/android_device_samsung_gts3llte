@@ -21,6 +21,14 @@ DEVICE_PATH := device/samsung/gts3llte
 # Assert
 TARGET_OTA_ASSERT_DEVICE := gts3llte
 
+# Telephony
+BOARD_RIL_CLASS := ../../../device/samsung/gts3llte/ril
+
+# RIL
+PROTOBUF_SUPPORTED := true
+TARGET_RIL_VARIANT := caf
+BOARD_PROVIDES_LIBRIL := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_gts3llte_defconfig
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x02200000 --tags_offset 0x02000000 --board SRPPK04A000KU

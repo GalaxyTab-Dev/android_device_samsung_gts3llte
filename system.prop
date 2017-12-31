@@ -9,5 +9,11 @@ ro.qualcomm.bluetooth.nap=false
 ro.qualcomm.bluetooth.opp=true
 ro.qualcomm.bluetooth.pbap=true
 
-# Radio
-ro.radio.noril=yes
+# Telephony
+telephony.lteOnCdmaDevice=1
+persist.radio.lw_enabled=true
+rild.libpath=/system/lib64/libsec-ril.so
+ro.telephony.ril_class=Gts3llteRIL
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.custom_ecc=1
+DEVICE_PROVISIONED=1

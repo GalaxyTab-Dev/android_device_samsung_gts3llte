@@ -11,6 +11,14 @@
     <item name="dsp.audio">41.9</item>
     <item name="dsp.video">195</item>
     <item name="gps.on">55</item>
+ <!-- The current consumed by the radio when it is scanning for a signal -->
+    <item name="radio.active">200</item>
+    <item name="radio.scanning">3</item>
+    <!-- Current consumed by the radio at different signal strengths, when paging -->
+    <array name="radio.on"> <!-- Strength 0 to BINS-1 -->
+        <value>3</value>
+        <value>3</value>
+    </array>
 
     <!-- Different CPU speeds as reported in
          /sys/devices/system/cpu/cpu0/cpufreq/stats/time_in_state -->

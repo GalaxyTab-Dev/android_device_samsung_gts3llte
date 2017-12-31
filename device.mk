@@ -26,7 +26,30 @@ PRODUCT_COPY_FILES += \
 
 # Root
 PRODUCT_PACKAGES += \
-    su		
+    su	
+
+# Ramdisk
+PRODUCT_PACKAGES += \
+    init.rilchip.rc
+
+# Ramdsik TEMP	
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/ramdisk/init.rilchip.rc:root/init.rilchip.rc	
+
+# Permissions
+PRODUCT_COPY_FILES += \
+   frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
+	
+# RIL
+PRODUCT_PACKAGES += \
+    librmnetctl \
+    librilutils
+
+# RIL
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    librmnetctl \
+    libxml2
 	
 # Inherit from msm8996-common
 $(call inherit-product, device/samsung/msm8996-common/msm8996.mk)
